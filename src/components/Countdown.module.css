@@ -1,0 +1,63 @@
+.section {
+  background: var(--cream);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.58rem, 1.2vw, 0.75rem);
+  letter-spacing: 0.38em;
+  color: var(--rust);
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: flex; justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem; flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.item {
+  display: flex; flex-direction: column;
+  align-items: center; min-width: 88px;
+}
+
+.num {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  color: var(--rust); line-height: 1;
+  position: relative;
+}
+.num::after {
+  content: ''; display: block;
+  width: 55%; height: 1px;
+  background: var(--gold);
+  margin: 0.4rem auto 0;
+}
+
+.unit {
+  font-family: 'Cinzel', serif;
+  font-size: 0.52rem; letter-spacing: 0.32em;
+  color: var(--gold); margin-top: 0.6rem;
+}
+
+.sep {
+  font-size: 2.2rem; color: var(--gold);
+  opacity: 0.4; padding-top: 0.35rem;
+  align-self: flex-start;
+}
+
+.location {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.55rem, 1.1vw, 0.7rem);
+  letter-spacing: 0.32em; line-height: 2.3;
+  color: var(--rust);
+}
+
+@media (max-width: 600px) {
+  .sep { display: none; }
+  .grid { gap: 1.5rem; }
+}

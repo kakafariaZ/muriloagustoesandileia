@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  height: 100vh; min-height: 600px;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  overflow: hidden;
+  background: var(--rust-dark);
+}
+
+.heroBg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 60% 40%, #c0462b88 0%, #5a1a0a 60%, #1a0600 100%);
+  z-index: 0;
+}
+
+.heroBgOverlay {
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(to bottom, rgba(90,26,10,0.55), rgba(26,6,0,0.72));
+}
+
+.petals { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+
+.petal {
+  position: absolute;
+  opacity: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0%   { transform: translateY(-60px) rotate(0deg);   opacity: 0; }
+  10%  { opacity: 0.4; }
+  90%  { opacity: 0.2; }
+  100% { transform: translateY(105vh) rotate(540deg); opacity: 0; }
+}
+
+.verse {
+  position: relative; z-index: 2;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.5rem, 1.1vw, 0.72rem);
+  letter-spacing: 0.25em;
+  color: var(--gold-light);
+  text-align: center;
+  line-height: 1.9;
+  padding: 0 1.5rem;
+}
+
+.names {
+  position: relative; z-index: 2;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-weight: 300;
+  font-size: clamp(2.8rem, 8vw, 6.5rem);
+  color: var(--white);
+  text-align: center;
+  line-height: 1.05;
+  text-shadow: 0 4px 40px rgba(0,0,0,0.5);
+  margin: 1.2rem 0;
+  padding: 0 1rem;
+}
+.names span { color: var(--gold-light); }
+
+.sub {
+  position: relative; z-index: 2;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.6rem, 1.4vw, 0.88rem);
+  letter-spacing: 0.3em;
+  color: var(--cream);
+  text-align: center;
+  line-height: 2;
+}
+
+.meta {
+  position: absolute; z-index: 2;
+  bottom: 2.5rem; width: 100%;
+  display: flex; justify-content: space-between;
+  padding: 0 3rem;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.52rem, 1vw, 0.68rem);
+  letter-spacing: 0.2em;
+  color: var(--gold-light);
+}
+
+.scrollHint {
+  position: absolute; z-index: 2;
+  bottom: 4.5rem; left: 50%;
+  transform: translateX(-50%);
+}
+
+.scrollHint svg {
+  animation: bounce 1.6s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+@media (max-width: 600px) {
+  .meta { flex-direction: column; align-items: center; gap: 0.4rem; padding: 0; bottom: 5.5rem; }
+}

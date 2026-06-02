@@ -1,0 +1,10 @@
+.divider {
+  display: flex; align-items: center; justify-content: center;
+  gap: 1.2rem; margin: 2.5rem auto; max-width: 400px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.icon { color: var(--gold); font-size: 1.1rem; }

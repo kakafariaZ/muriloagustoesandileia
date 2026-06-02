@@ -1,0 +1,27 @@
+.footer {
+  background: var(--rust-dark);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.names {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-weight: 300;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.names span { color: var(--gold-light); }
+
+.date {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem; letter-spacing: 0.38em;
+  color: var(--gold); margin-bottom: 2rem;
+}
+
+.verse {
+  font-style: italic;
+  font-size: 0.95rem; line-height: 1.9;
+  color: rgba(255,255,255,0.42);
+  max-width: 400px; margin: 0 auto;
+}
