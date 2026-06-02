@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 import { useEffect, useRef } from 'react'
 
 // Change this to your image path, e.g. '/foto-casal.jpg'
-const BG_IMAGE = 'public/gutosandi.jpg'
+const BG_IMAGE = '/gutosandi.jpg'
 
 export function Hero() {
   const petalsRef = useRef<HTMLDivElement>(null)
