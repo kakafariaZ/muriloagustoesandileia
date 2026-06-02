@@ -62,7 +62,7 @@ export function Info() {
           variants={up} initial="hidden" whileInView="visible"
           viewport={{ once: true }} transition={transition(0.25)}>
           <span className={styles.dateMonth}>JULHO</span>
-          <span className={styles.dateDay}>02</span>
+          <span className={styles.dateDay}>26</span>
           <span className={styles.dateTime}>10:00<br />AM</span>
         </motion.div>
 

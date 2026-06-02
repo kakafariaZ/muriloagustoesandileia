@@ -83,7 +83,7 @@ export function Hero() {
         animate="visible"
         transition={{ duration: 1, delay: 1.6 }}
       >
-        <span>JULHO 02, 2026 · 10:00 AM</span>
+        <span>JULHO 26, 2026 · 10:00 AM</span>
         <span>BOA VISTA DO TUPIM</span>
       </motion.div>
 

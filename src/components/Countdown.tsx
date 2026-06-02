@@ -3,7 +3,7 @@ import { useCountdown } from '../hooks/useCountdown'
 import { Divider } from './Divider'
 import styles from './Countdown.module.css'
 
-const WEDDING = new Date('2026-07-02T10:00:00')
+const WEDDING = new Date('2026-07-26T10:00:00')
 
 const up = { hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } }
 
@@ -49,7 +49,7 @@ export function Countdown() {
       <motion.p className={styles.location}
         variants={up} initial="hidden" whileInView="visible"
         viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.6 }}>
-        BOA VISTA DO TUPIM · BAHIA<br />02 DE JULHO DE 2026
+        BOA VISTA DO TUPIM · BAHIA<br />26 DE JULHO DE 2026
       </motion.p>
     </section>
   )

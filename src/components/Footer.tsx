@@ -57,7 +57,7 @@ export function Footer() {
       <motion.p className={styles.date}
         variants={up} initial="hidden" whileInView="visible"
         viewport={{ once: true }} transition={{ duration: 0.9, delay: 0.1 }}>
-        02 · JULHO · 2026
+        26 · JULHO · 2026
       </motion.p>
 
       <motion.p className={styles.verse}
