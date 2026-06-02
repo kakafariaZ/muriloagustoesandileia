@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion'
 import styles from './Hero.module.css'
 import { useEffect, useRef } from 'react'
-import bgImage from '../assets/gutosandi.jpg'
 
-// Change this to your image path, e.g. '/foto-casal.jpg'
-const BG_IMAGE = bgImage
+const BG_IMAGE = `${import.meta.env.BASE_URL}gutosandi.jpg`
 
 export function Hero() {
   const petalsRef = useRef<HTMLDivElement>(null)
